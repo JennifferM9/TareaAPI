@@ -1,0 +1,37 @@
+### Para obtener los productos
+GET http://localhost:3000/productos
+Content-Type: application/json
+
+###Consulta de producto
+GET http://localhost:3000/productos/1
+Content-Type: application/json
+
+###Crear Producto
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+    "nombre": "Cloro",
+    "precio": 22.00,
+    "descripcion": "Cloro Suli de 1000ml. Agente desinfecatnte y también un oxidante poderoso.",
+    "disponible": true
+}
+
+###Actualizar un producto
+PUT http://localhost:3000/productos/1
+Content-Type: application/json
+
+{
+    "nombre": "Cloro Suli",
+    "precio": 25.00,
+    "descripcion": "Cloro Suli de 1000ml. Agente desinfecatnte y también un oxidante poderoso.",
+    "disponible": true
+}
+
+###Eliminar un producto
+DELETE http://localhost:3000/productos/ 1750561125504
+Content-Type: application/json
+
+###Obtener productos disponibles
+GET http://localhost:3000/productos/disponibles?disponible=true
+Content-Type: application/json
